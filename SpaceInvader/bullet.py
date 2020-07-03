@@ -6,14 +6,14 @@ class Bullet():
 
     def __init__(self, bullet_x, bullet_y):
         
-        self.bullet_img = pygame.image.load('bullet.png')
+        self.bullet_img = pygame.image.load('bullet-1.png')
         self.x = bullet_x
         self.y = bullet_y
         self.state = "ready"
 
 
     def fire_bullet(self, screen, player_x):
-        self.y -= 10
+        self.y -= 5
         screen.blit(self.bullet_img, (player_x + 16, self.y))
 
     def collision(self, enemy_x, enemy_y):
