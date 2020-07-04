@@ -6,7 +6,7 @@ class Bullet():
 
     def __init__(self, bullet_x, bullet_y):
         
-        self.bullet_img = pygame.image.load('bullet-1.png')
+        self.bullet_img = pygame.image.load('bullet.png')
         self.x = bullet_x
         self.y = bullet_y
         self.state = "ready"
