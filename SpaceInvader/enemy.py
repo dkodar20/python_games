@@ -6,7 +6,7 @@ class Enemy():
 
     def __init__(self, enemy_x, enemy_y):
         
-        self.enemy_img = pygame.image.load('alien-monster-2.png')
+        self.enemy_img = pygame.image.load('alien-monster.png')
         self.x = enemy_x
         self.y = enemy_y
         self._x_change = 2
